@@ -230,6 +230,42 @@
             color: #fff;
         }
 
+        /* USBSC Studios */
+        .studio-hero {
+            background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 24px;
+            margin: 20px 0 30px;
+        }
+
+        .studio-logo {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            border-radius: 18px;
+            border: 1px solid #30363d;
+            display: block;
+            margin: 0 0 18px 0;
+            background: #000;
+        }
+
+        .studio-logos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .trainme-focus {
+            border-left: 4px solid #58a6ff;
+            background: #0d1117;
+            padding: 16px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             h1 {
@@ -289,14 +325,15 @@
     <header>
         <div class="container">
             <h1>👋 Welcome to My Profile</h1>
-            <p class="tagline">Freshman at Santa Clara High School | Tech Enthusiast | Bay Area Native</p>
+            <p class="tagline">Freshman at Santa Clara High School | Building Train Me for football athletes</p>
             
             <nav>
-                <button class="nav-button active" onclick="showTab('about')">About Me</button>
+                <button class="nav-button" onclick="showTab('about')">About Me</button>
                 <button class="nav-button" onclick="showTab('school')">School Info</button>
                 <button class="nav-button" onclick="showTab('bayarea')">Bay Area</button>
                 <button class="nav-button" onclick="showTab('uc')">UC System</button>
                 <button class="nav-button" onclick="showTab('projects')">Projects</button>
+                <button class="nav-button active" onclick="showTab('usbsc-studios')">USBSC Studios</button>
                 <button class="nav-button" onclick="showTab('scusd-news')">SCUSD News</button>
                 <button class="nav-button" onclick="showTab('uc-news')">UC News</button>
             </nav>
@@ -307,7 +344,7 @@
         <div class="container">
 
             <!-- About Me Tab -->
-            <div id="about" class="tab-pane active">
+            <div id="about" class="tab-pane">
                 <h2>About Me</h2>
                 <p>Hi! I'm a freshman at <strong>Santa Clara High School</strong> in Santa Clara, California. I'm passionate about technology, learning new skills, and exploring the incredible opportunities in Silicon Valley.</p>
                 
@@ -492,9 +529,26 @@
             <!-- Projects Tab -->
             <div id="projects" class="tab-pane">
                 <h2>Projects & Achievements</h2>
-                <p>Here are some projects I've worked on and achievements I'm proud of:</p>
+                <p>Here are some projects I've worked on, with my upcoming mobile app <strong>Train Me</strong> as the main focus right now.</p>
 
                 <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>🚆 Train Me (Upcoming Mobile App)</h3>
+                        <p>Train Me is my upcoming mobile app for American football players and my current top project focus.</p>
+                        <p><strong>Current direction:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Track workouts, speed, strength, and performance goals</li>
+                            <li>Support position-specific football development</li>
+                            <li>Monitor habits needed to reach college-athlete standards</li>
+                            <li>Mobile-first daily training and progress workflow</li>
+                        </ul>
+                        <p style="margin-top: 15px;">
+                            <span class="project-badge highlight">Main Project</span>
+                            <span class="project-badge">Mobile App</span>
+                            <span class="project-badge">Coming Soon</span>
+                        </p>
+                    </div>
+
                     <div class="project-card">
                         <h3>🎵 Frequency Tool</h3>
                         <p>A real-time audio frequency analyzer built with Web Audio API and HTML5 Canvas.</p>
@@ -556,6 +610,42 @@
 
                 <div class="highlight">
                     <strong>More Coming Soon:</strong> I'll be adding more projects as I complete assignments, participate in competitions, and work on personal learning goals throughout high school!
+                </div>
+            </div>
+
+            <!-- USBSC Studios Tab -->
+            <div id="usbsc-studios" class="tab-pane active">
+                <h2>USBSC Studios</h2>
+                <p>Welcome to USBSC Studios — the home for my projects, experiments, and upcoming releases.</p>
+
+                <div class="studio-hero">
+                    <div class="studio-logos">
+                        <img
+                            class="studio-logo"
+                            src="https://github.com/user-attachments/assets/6d97b9cf-6e40-433e-b413-84f053dbc1da"
+                            alt="USBSC Studios logo"
+                        >
+                        <img
+                            class="studio-logo"
+                            src="https://github.com/user-attachments/assets/bf011f74-5ac9-4b55-b998-4353f5c6e7c1"
+                            alt="Train Me logo"
+                        >
+                    </div>
+                    <div class="trainme-focus">
+                        <h3>🚆 Main Focus: Train Me</h3>
+                        <p><strong>Train Me</strong> is my upcoming dedicated app for American football players and the center of my portfolio.</p>
+                        <p>It tracks everything needed to become a college-level athlete: training, athletic performance, consistency, and progress over time.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>🧩 Studio Project Portfolio</h3>
+                    <p>USBSC Studios currently includes:</p>
+                    <ul>
+                        <li><strong>Train Me</strong> - Upcoming football-athlete training app and top-priority release</li>
+                        <li><strong>Frequency Tool</strong> - Live Web Audio frequency analyzer</li>
+                        <li><strong>Personal Portfolio</strong> - Ongoing showcase of my work and learning journey</li>
+                    </ul>
                 </div>
             </div>
 

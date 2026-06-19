@@ -9,7 +9,8 @@ This portfolio showcases:
 - **School Info** - Santa Clara High School details and programs
 - **Bay Area** - Information about Silicon Valley and the Bay Area tech scene
 - **UC System** - Overview of the University of California system and colleges
-- **Projects** - My projects and achievements (including Frequency Tool!)
+- **Projects** - My projects and achievements, led by my upcoming mobile app Train Me
+- **USBSC Studios** - Studio page highlighting Train Me as my main talking point
 - **SCUSD News** - Links to Santa Clara Unified School District resources
 - **UC News** - Links to UC campus news and admissions information
 
